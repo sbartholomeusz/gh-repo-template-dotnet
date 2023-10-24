@@ -1,0 +1,17 @@
+# ########################################################################################
+# This file provides users or teams with: 
+#   1. write access to the given Github repository
+#   2. automatic requests for review for new pull requests that touch specific files and directories in the repo
+#
+# Format is as follows:
+# <file-or-directory> @user1 @user2 @team1 ...
+#
+# For more information:
+# https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-code-owners
+#
+# ########################################################################################
+
+#
+# These owners will be the default owners for all file types in
+# the repo, unless a later match takes precedence.
+*       @sbartholomeusz

@@ -1,2 +1,13 @@
-# gh-repo-template
-GitHub Template Repository
+# gh-repo-template-dotnet
+
+## Overview
+GitHub repository template for dotnet
+
+## Architecture
+...
+
+## Installation
+...
+
+## Development Notes
+...
