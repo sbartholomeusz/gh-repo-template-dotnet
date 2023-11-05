@@ -1,0 +1,27 @@
+name: dotnet-code-ql
+
+on:
+  # Run workflow manually
+  workflow_dispatch:
+  
+  # PR on any branch
+  pull_request:
+
+  # Staged PR's for any branch
+  merge_group:
+
+defaults:
+  run:
+    shell: bash
+    working-directory: ./src
+
+jobs:   
+  code-ql-checks:
+    permissions:
+      actions: read
+      contents: read
+      security-events: write
+    uses: sbartholomeusz/gh-actions-common/.github/workflows/dotnet-code-ql.yml@main
+    with:
+      dotnet_version: '7.0.x'
+      path: './src'
