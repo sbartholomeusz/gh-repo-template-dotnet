@@ -8,12 +8,6 @@ on:
   # Run workflow manually
   workflow_dispatch:
 
-  # PR for any branch
-  pull_request:
-
-  # Staged PR's for any branch
-  merge_group:
-
   # push on any branch
   push:
 
@@ -31,5 +25,5 @@ jobs:
     uses: sbartholomeusz/gh-actions-common/.github/workflows/dotnet-test.yml@v1
     with:
       dotnet_version: '7.x'
-      path: 'src'
+      path: './src'
       os_platform: 'windows-latest'
