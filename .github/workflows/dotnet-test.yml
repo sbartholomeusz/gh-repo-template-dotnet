@@ -1,0 +1,29 @@
+name: dotnet-test
+
+# 
+# Purpose: Run dotnet tests
+#
+
+on:
+  # Run workflow manually
+  workflow_dispatch:
+
+  # push on any branch
+  push:
+
+defaults:
+  run:
+    shell: bash
+    working-directory: src
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.event.pull_request.number || github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  test:
+    uses: sbartholomeusz/gh-actions-common/.github/workflows/dotnet-test.yml@v1
+    with:
+      dotnet_version: '7.x'
+      path: './src'
+      os_platform: 'windows-latest'
