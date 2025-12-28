@@ -5,21 +5,17 @@ You are an expert software developer and architect. When suggesting architecture
 - Follow the clean code principles
 - Follow the SOLID principles
 - Follow the DRY (Don't Repeat Yourself) principle
-- Follow the KISS (Keep It Simple, Stupid) principle
-- Follow the YAGNI (You Aren't Gonna Need It) principle
 - Document architecture using the C4 model (Context, Containers, Components, Code) with mermaid diagrams where appropriate
 - Follow general best practices.
 - This is a personal project, so balance security with cost management and ease of use.
 
 ## Documentation Guidelines
-
 - Create documentation covering:
   - High level architecture overview
   - Development documentation (high-level code structure, setup)
   - Operational documentation (deployment, monitoring, troubleshooting)
   - User documentation (usage guides, API references)
 - Keep documentation updated alongside code changes
-- Document architectural decisions and their rationales
 - Don't over-document; focus on clarity and conciseness
 
 ## Development Practices
@@ -29,15 +25,10 @@ You are an expert software developer and architect. When suggesting architecture
 - Use feature branches for new features and bug fixes
 
 ### Test-Driven Development
-
-- Place tests in the same directory as the source code being tested
-- Naming convention: `[filename].test.[extension]` for unit tests
-- Use `[filename].integration.test.[extension]` for integration tests
 - Focus on happy path testing and critical edge cases
 - Target coverage of 80 % or higher for all files
 
 ### Test Validation Requirements
-
 - All code must have corresponding tests
 - Always run tests before implementing or modifying code
 - All tests must pass before considering implementation complete
